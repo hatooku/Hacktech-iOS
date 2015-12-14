@@ -13,6 +13,18 @@
 		D309E2981C1EB0EE00596CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D309E2961C1EB0EE00596CB0 /* Main.storyboard */; };
 		D309E29A1C1EB0EE00596CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D309E2991C1EB0EE00596CB0 /* Assets.xcassets */; };
 		D309E29D1C1EB0EE00596CB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D309E29B1C1EB0EE00596CB0 /* LaunchScreen.storyboard */; };
+		D309E2AA1C1EB21B00596CB0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D309E2A81C1EB21B00596CB0 /* Bolts.framework */; };
+		D309E2AB1C1EB21B00596CB0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D309E2A91C1EB21B00596CB0 /* Parse.framework */; };
+		D309E2AD1C1EB23D00596CB0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D309E2AC1C1EB23D00596CB0 /* AudioToolbox.framework */; };
+		D309E2AF1C1EB24200596CB0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D309E2AE1C1EB24200596CB0 /* CFNetwork.framework */; };
+		D309E2B11C1EB24900596CB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D309E2B01C1EB24900596CB0 /* CoreGraphics.framework */; };
+		D309E2B31C1EB24E00596CB0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D309E2B21C1EB24E00596CB0 /* CoreLocation.framework */; };
+		D309E2B51C1EB25300596CB0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D309E2B41C1EB25300596CB0 /* QuartzCore.framework */; };
+		D309E2B71C1EB25700596CB0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D309E2B61C1EB25700596CB0 /* Security.framework */; };
+		D309E2B91C1EB25C00596CB0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D309E2B81C1EB25C00596CB0 /* StoreKit.framework */; };
+		D309E2BB1C1EB26200596CB0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D309E2BA1C1EB26200596CB0 /* SystemConfiguration.framework */; };
+		D309E2BD1C1EB26600596CB0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D309E2BC1C1EB26600596CB0 /* libz.tbd */; };
+		D309E2BF1C1EB26B00596CB0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D309E2BE1C1EB26B00596CB0 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +36,18 @@
 		D309E2991C1EB0EE00596CB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D309E29C1C1EB0EE00596CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D309E29E1C1EB0EE00596CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D309E2A81C1EB21B00596CB0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = SDKs/Bolts.framework; sourceTree = "<group>"; };
+		D309E2A91C1EB21B00596CB0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = SDKs/Parse.framework; sourceTree = "<group>"; };
+		D309E2AC1C1EB23D00596CB0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D309E2AE1C1EB24200596CB0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D309E2B01C1EB24900596CB0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D309E2B21C1EB24E00596CB0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D309E2B41C1EB25300596CB0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D309E2B61C1EB25700596CB0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D309E2B81C1EB25C00596CB0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D309E2BA1C1EB26200596CB0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D309E2BC1C1EB26600596CB0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D309E2BE1C1EB26B00596CB0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +55,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D309E2BF1C1EB26B00596CB0 /* libsqlite3.tbd in Frameworks */,
+				D309E2BD1C1EB26600596CB0 /* libz.tbd in Frameworks */,
+				D309E2BB1C1EB26200596CB0 /* SystemConfiguration.framework in Frameworks */,
+				D309E2B91C1EB25C00596CB0 /* StoreKit.framework in Frameworks */,
+				D309E2B71C1EB25700596CB0 /* Security.framework in Frameworks */,
+				D309E2B51C1EB25300596CB0 /* QuartzCore.framework in Frameworks */,
+				D309E2B31C1EB24E00596CB0 /* CoreLocation.framework in Frameworks */,
+				D309E2B11C1EB24900596CB0 /* CoreGraphics.framework in Frameworks */,
+				D309E2AF1C1EB24200596CB0 /* CFNetwork.framework in Frameworks */,
+				D309E2AD1C1EB23D00596CB0 /* AudioToolbox.framework in Frameworks */,
+				D309E2AB1C1EB21B00596CB0 /* Parse.framework in Frameworks */,
+				D309E2AA1C1EB21B00596CB0 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +76,18 @@
 		D309E2841C1EB0ED00596CB0 = {
 			isa = PBXGroup;
 			children = (
+				D309E2BE1C1EB26B00596CB0 /* libsqlite3.tbd */,
+				D309E2BC1C1EB26600596CB0 /* libz.tbd */,
+				D309E2BA1C1EB26200596CB0 /* SystemConfiguration.framework */,
+				D309E2B81C1EB25C00596CB0 /* StoreKit.framework */,
+				D309E2B61C1EB25700596CB0 /* Security.framework */,
+				D309E2B41C1EB25300596CB0 /* QuartzCore.framework */,
+				D309E2B21C1EB24E00596CB0 /* CoreLocation.framework */,
+				D309E2B01C1EB24900596CB0 /* CoreGraphics.framework */,
+				D309E2AE1C1EB24200596CB0 /* CFNetwork.framework */,
+				D309E2AC1C1EB23D00596CB0 /* AudioToolbox.framework */,
+				D309E2A81C1EB21B00596CB0 /* Bolts.framework */,
+				D309E2A91C1EB21B00596CB0 /* Parse.framework */,
 				D309E28F1C1EB0ED00596CB0 /* Hacktech */,
 				D309E28E1C1EB0ED00596CB0 /* Products */,
 			);
@@ -253,6 +301,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Hacktech",
+					"$(PROJECT_DIR)/SDKs",
+				);
 				INFOPLIST_FILE = Hacktech/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hacktech.Hacktech;
@@ -264,6 +317,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Hacktech",
+					"$(PROJECT_DIR)/SDKs",
+				);
 				INFOPLIST_FILE = Hacktech/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hacktech.Hacktech;
