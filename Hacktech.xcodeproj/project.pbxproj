@@ -25,6 +25,13 @@
 		D309E2BB1C1EB26200596CB0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D309E2BA1C1EB26200596CB0 /* SystemConfiguration.framework */; };
 		D309E2BD1C1EB26600596CB0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D309E2BC1C1EB26600596CB0 /* libz.tbd */; };
 		D309E2BF1C1EB26B00596CB0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D309E2BE1C1EB26B00596CB0 /* libsqlite3.tbd */; };
+		D33FF81D1C1FB56100015FEC /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33FF81C1C1FB56100015FEC /* ThirdViewController.swift */; };
+		D33FF81F1C1FB58700015FEC /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33FF81E1C1FB58700015FEC /* FourthViewController.swift */; };
+		D33FF8271C1FCFEF00015FEC /* Organization-25.png in Resources */ = {isa = PBXBuildFile; fileRef = D33FF8231C1FCFEF00015FEC /* Organization-25.png */; };
+		D33FF8281C1FCFEF00015FEC /* Timer-25.png in Resources */ = {isa = PBXBuildFile; fileRef = D33FF8241C1FCFEF00015FEC /* Timer-25.png */; };
+		D33FF8291C1FCFEF00015FEC /* Advertising-25.png in Resources */ = {isa = PBXBuildFile; fileRef = D33FF8251C1FCFEF00015FEC /* Advertising-25.png */; };
+		D33FF82A1C1FCFEF00015FEC /* Calendar-25.png in Resources */ = {isa = PBXBuildFile; fileRef = D33FF8261C1FCFEF00015FEC /* Calendar-25.png */; };
+		D33FF82C1C1FD11E00015FEC /* organization.png in Resources */ = {isa = PBXBuildFile; fileRef = D33FF82B1C1FD11E00015FEC /* organization.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +55,13 @@
 		D309E2BA1C1EB26200596CB0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D309E2BC1C1EB26600596CB0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D309E2BE1C1EB26B00596CB0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D33FF81C1C1FB56100015FEC /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		D33FF81E1C1FB58700015FEC /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		D33FF8231C1FCFEF00015FEC /* Organization-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Organization-25.png"; sourceTree = "<group>"; };
+		D33FF8241C1FCFEF00015FEC /* Timer-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Timer-25.png"; sourceTree = "<group>"; };
+		D33FF8251C1FCFEF00015FEC /* Advertising-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Advertising-25.png"; sourceTree = "<group>"; };
+		D33FF8261C1FCFEF00015FEC /* Calendar-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-25.png"; sourceTree = "<group>"; };
+		D33FF82B1C1FD11E00015FEC /* organization.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = organization.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,15 +118,30 @@
 		D309E28F1C1EB0ED00596CB0 /* Hacktech */ = {
 			isa = PBXGroup;
 			children = (
+				D33FF8221C1FCFD100015FEC /* Images */,
 				D309E2901C1EB0ED00596CB0 /* AppDelegate.swift */,
 				D309E2921C1EB0ED00596CB0 /* FirstViewController.swift */,
 				D309E2941C1EB0ED00596CB0 /* SecondViewController.swift */,
+				D33FF81C1C1FB56100015FEC /* ThirdViewController.swift */,
+				D33FF81E1C1FB58700015FEC /* FourthViewController.swift */,
 				D309E2961C1EB0EE00596CB0 /* Main.storyboard */,
 				D309E2991C1EB0EE00596CB0 /* Assets.xcassets */,
 				D309E29B1C1EB0EE00596CB0 /* LaunchScreen.storyboard */,
 				D309E29E1C1EB0EE00596CB0 /* Info.plist */,
 			);
 			path = Hacktech;
+			sourceTree = "<group>";
+		};
+		D33FF8221C1FCFD100015FEC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D33FF8231C1FCFEF00015FEC /* Organization-25.png */,
+				D33FF8241C1FCFEF00015FEC /* Timer-25.png */,
+				D33FF8251C1FCFEF00015FEC /* Advertising-25.png */,
+				D33FF8261C1FCFEF00015FEC /* Calendar-25.png */,
+				D33FF82B1C1FD11E00015FEC /* organization.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +202,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D33FF82C1C1FD11E00015FEC /* organization.png in Resources */,
 				D309E29D1C1EB0EE00596CB0 /* LaunchScreen.storyboard in Resources */,
 				D309E29A1C1EB0EE00596CB0 /* Assets.xcassets in Resources */,
 				D309E2981C1EB0EE00596CB0 /* Main.storyboard in Resources */,
+				D33FF82A1C1FCFEF00015FEC /* Calendar-25.png in Resources */,
+				D33FF8291C1FCFEF00015FEC /* Advertising-25.png in Resources */,
+				D33FF8281C1FCFEF00015FEC /* Timer-25.png in Resources */,
+				D33FF8271C1FCFEF00015FEC /* Organization-25.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +222,9 @@
 			files = (
 				D309E2951C1EB0ED00596CB0 /* SecondViewController.swift in Sources */,
 				D309E2911C1EB0ED00596CB0 /* AppDelegate.swift in Sources */,
+				D33FF81D1C1FB56100015FEC /* ThirdViewController.swift in Sources */,
 				D309E2931C1EB0ED00596CB0 /* FirstViewController.swift in Sources */,
+				D33FF81F1C1FB58700015FEC /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +384,7 @@
 				D309E2A31C1EB0EE00596CB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
