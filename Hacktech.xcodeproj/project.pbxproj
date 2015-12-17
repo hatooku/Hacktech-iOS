@@ -31,7 +31,6 @@
 		D33FF8281C1FCFEF00015FEC /* Timer-25.png in Resources */ = {isa = PBXBuildFile; fileRef = D33FF8241C1FCFEF00015FEC /* Timer-25.png */; };
 		D33FF8291C1FCFEF00015FEC /* Advertising-25.png in Resources */ = {isa = PBXBuildFile; fileRef = D33FF8251C1FCFEF00015FEC /* Advertising-25.png */; };
 		D33FF82A1C1FCFEF00015FEC /* Calendar-25.png in Resources */ = {isa = PBXBuildFile; fileRef = D33FF8261C1FCFEF00015FEC /* Calendar-25.png */; };
-		D33FF82C1C1FD11E00015FEC /* organization.png in Resources */ = {isa = PBXBuildFile; fileRef = D33FF82B1C1FD11E00015FEC /* organization.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +60,6 @@
 		D33FF8241C1FCFEF00015FEC /* Timer-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Timer-25.png"; sourceTree = "<group>"; };
 		D33FF8251C1FCFEF00015FEC /* Advertising-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Advertising-25.png"; sourceTree = "<group>"; };
 		D33FF8261C1FCFEF00015FEC /* Calendar-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-25.png"; sourceTree = "<group>"; };
-		D33FF82B1C1FD11E00015FEC /* organization.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = organization.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +137,6 @@
 				D33FF8241C1FCFEF00015FEC /* Timer-25.png */,
 				D33FF8251C1FCFEF00015FEC /* Advertising-25.png */,
 				D33FF8261C1FCFEF00015FEC /* Calendar-25.png */,
-				D33FF82B1C1FD11E00015FEC /* organization.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -202,7 +199,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D33FF82C1C1FD11E00015FEC /* organization.png in Resources */,
 				D309E29D1C1EB0EE00596CB0 /* LaunchScreen.storyboard in Resources */,
 				D309E29A1C1EB0EE00596CB0 /* Assets.xcassets in Resources */,
 				D309E2981C1EB0EE00596CB0 /* Main.storyboard in Resources */,
