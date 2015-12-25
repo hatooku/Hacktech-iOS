@@ -65,17 +65,15 @@ class CountdownViewController: UIViewController {
         
         countdownRing.startAngle = -90
         countdownRing.progressThickness = 0.2
-        countdownRing.trackThickness = 0.1
+        countdownRing.trackThickness = 0.22
         countdownRing.clockwise = false
         countdownRing.gradientRotateSpeed = 2
         countdownRing.roundedCorners = false
         countdownRing.glowMode = .Constant
-        countdownRing.glowAmount = 0.1
+        countdownRing.glowAmount = 0.3
         countdownRing.setColors(orange)
         countdownRing.trackColor = gray
         countdownRing.angle = 360
-
-        
         
         // Update text and ring UI
         updateTime()

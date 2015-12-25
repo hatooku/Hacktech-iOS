@@ -10,16 +10,24 @@ import UIKit
 
 class MapViewController: UIViewController {
     
+    @IBOutlet weak var webView: UIWebView!
+    var path = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        path = NSBundle.mainBundle().pathForResource("map", ofType: "pdf")!
+        
+        let url = NSURL.fileURLWithPath(path)
+        
+        self.webView.loadRequest(NSURLRequest(URL: url))
+        
+        self.automaticallyAdjustsScrollViewInsets = false
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
 }
 

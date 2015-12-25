@@ -6,6 +6,14 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+            <string>Raleway-SemiBold</string>
+            <string>Raleway-SemiBold</string>
+            <string>Raleway-SemiBold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Countdown-->
         <scene sceneID="hNz-n2-bh7">
@@ -19,11 +27,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mB5-2c-0vJ" userLabel="Countdown Ring" customClass="KDCircularProgress" customModule="Hacktech" customModuleProvider="target">
-                                <rect key="frame" x="171.5" y="294" width="257" height="257"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mB5-2c-0vJ" userLabel="Countdown Ring" customClass="KDCircularProgress" customModule="Hacktech" customModuleProvider="target">
+                                <rect key="frame" x="135.5" y="258" width="329" height="329"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="36 : 00 : 00" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD" userLabel="TimerText">
-                                        <rect key="frame" x="51.5" y="110.5" width="155" height="36"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="36 : 00 : 00" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD" userLabel="TimerText">
+                                        <rect key="frame" x="66.5" y="141.5" width="197.5" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="KQZ-1w-vlD" secondAttribute="height" multiplier="181:42" id="gyb-Kn-VYc"/>
                                         </constraints>
@@ -52,7 +60,7 @@
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="glowAmount">
-                                        <real key="value" value="0.10000000000000001"/>
+                                        <real key="value" value="0.29999999999999999"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="progressThickness">
                                         <real key="value" value="0.20000000000000001"/>
@@ -61,7 +69,7 @@
                                         <color key="value" red="0.23921568630000001" green="0.2274509804" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="trackThickness">
-                                        <real key="value" value="0.20000000000000001"/>
+                                        <real key="value" value="0.22"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="IBColor1">
                                         <color key="value" red="0.96536177396774292" green="0.51874542236328125" blue="0.11952381581068039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -78,7 +86,7 @@
                                 <rect key="frame" x="20" y="307" width="560" height="244"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="mB5-2c-0vJ" secondAttribute="bottom" id="40y-ir-SJJ"/>
                             <constraint firstItem="mB5-2c-0vJ" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="9BH-fO-J4m"/>
@@ -164,42 +172,181 @@
             <point key="canvasLocation" x="-598" y="810"/>
         </scene>
         <!--Schedule-->
-        <scene sceneID="uOq-tY-laG">
+        <scene sceneID="Hqa-cW-uWT">
             <objects>
-                <viewController id="OJa-0A-Ac4" customClass="ScheduleViewController" customModule="Hacktech" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VkO-6Y-9mf"/>
-                        <viewControllerLayoutGuide type="bottom" id="Nxy-RY-NSR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="qIm-dF-VVs">
+                <tableViewController id="8pw-HS-fIb" customClass="ScheduleViewController" customModule="Hacktech" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="40" sectionHeaderHeight="28" sectionFooterHeight="28" id="lfA-dQ-Qnh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Schedule" id="XAs-uD-JS8"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hM8-9E-tYC" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleCell" id="yfh-N7-mPY" customClass="ScheduleCell" customModule="Hacktech" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="40"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yfh-N7-mPY" id="acP-jw-Ii6">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="39.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdS-hw-VIj">
+                                            <rect key="frame" x="20" y="0.0" width="91" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="91" id="Zkv-pM-T1c"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunch" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwb-V4-xlZ">
+                                            <rect key="frame" x="346" y="0.0" width="234" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="234" id="Bsr-35-WD1"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.23921568630000001" green="0.2274509804" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="Qwb-V4-xlZ" firstAttribute="centerY" secondItem="acP-jw-Ii6" secondAttribute="centerY" id="Rzt-kz-HJa"/>
+                                        <constraint firstItem="EdS-hw-VIj" firstAttribute="centerY" secondItem="acP-jw-Ii6" secondAttribute="centerY" id="gqx-tC-b75"/>
+                                        <constraint firstItem="EdS-hw-VIj" firstAttribute="top" secondItem="acP-jw-Ii6" secondAttribute="topMargin" constant="-8" id="iq9-jK-j9M"/>
+                                        <constraint firstItem="EdS-hw-VIj" firstAttribute="leading" secondItem="acP-jw-Ii6" secondAttribute="leadingMargin" constant="12" id="lyc-34-jgi"/>
+                                        <constraint firstItem="Qwb-V4-xlZ" firstAttribute="trailing" secondItem="acP-jw-Ii6" secondAttribute="trailingMargin" constant="-12" id="sKc-YV-ut4"/>
+                                        <constraint firstItem="Qwb-V4-xlZ" firstAttribute="top" secondItem="acP-jw-Ii6" secondAttribute="topMargin" constant="-8" id="y5p-Lw-yaL"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="eventLabel" destination="Qwb-V4-xlZ" id="8J7-2s-Zgh"/>
+                                    <outlet property="timeLabel" destination="EdS-hw-VIj" id="flY-yk-Kde"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleHeader" id="MPr-cn-5Y4" customClass="ScheduleHeader" customModule="Hacktech" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="132" width="600" height="40"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MPr-cn-5Y4" id="WSw-Gl-gz8">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="39.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zld-X3-v2m">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="39.5"/>
+                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="24"/>
+                                            <color key="textColor" red="0.95686274510000002" green="0.51764705879999995" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="zld-X3-v2m" secondAttribute="trailing" id="SXd-CO-QoH"/>
+                                        <constraint firstItem="zld-X3-v2m" firstAttribute="top" secondItem="WSw-Gl-gz8" secondAttribute="top" id="ojQ-JT-9NW"/>
+                                        <constraint firstItem="zld-X3-v2m" firstAttribute="leading" secondItem="WSw-Gl-gz8" secondAttribute="leading" id="rMb-rH-9BL"/>
+                                        <constraint firstItem="zld-X3-v2m" firstAttribute="centerY" secondItem="WSw-Gl-gz8" secondAttribute="centerY" id="teP-8m-kiC"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dayLabel" destination="zld-X3-v2m" id="pAN-MG-2W6"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8pw-HS-fIb" id="hvi-ZL-8eh"/>
+                            <outlet property="delegate" destination="8pw-HS-fIb" id="EkX-pX-PFu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Schedule" id="Xs3-DX-gtm"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7lg-lp-Aei" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1558" y="2106"/>
         </scene>
         <!--Sponsors-->
-        <scene sceneID="b7P-XI-zgj">
+        <scene sceneID="jR3-8y-Noi">
             <objects>
-                <viewController title="Sponsors" id="972-ov-CRx" customClass="SponsorsViewController" customModule="Hacktech" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="83V-FI-G2h"/>
-                        <viewControllerLayoutGuide type="bottom" id="DKV-v3-l4M"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Qv6-T8-y4y">
+                <collectionViewController id="GDG-oq-vPX" userLabel="Sponsors" customClass="SponsorsViewController" customModule="Hacktech" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" id="4Cn-Dx-t1d">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Sponsors" id="PQW-B0-POI"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bn5-Ie-BOA" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.95686274510000002" green="0.51764705879999995" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="mvc-NY-yCk">
+                            <size key="itemSize" width="250" height="250"/>
+                            <size key="headerReferenceSize" width="10" height="55"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="15" minY="20" maxX="15" maxY="20"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SponsorCell" id="wyX-r1-i8b" customClass="SponsorCell" customModule="Hacktech" customModuleProvider="target">
+                                <rect key="frame" x="15" y="139" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kmQ-ac-ypb">
+                                            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="kmQ-ac-ypb" firstAttribute="leading" secondItem="wyX-r1-i8b" secondAttribute="leading" id="1Vc-OC-RYm"/>
+                                    <constraint firstAttribute="bottom" secondItem="kmQ-ac-ypb" secondAttribute="bottom" id="87g-SE-Qfs"/>
+                                    <constraint firstAttribute="trailing" secondItem="kmQ-ac-ypb" secondAttribute="trailing" id="NOp-bn-zOc"/>
+                                    <constraint firstItem="kmQ-ac-ypb" firstAttribute="top" secondItem="wyX-r1-i8b" secondAttribute="top" id="z2o-lz-afL"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="kmQ-ac-ypb" id="P95-pI-E8b"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Header" id="VU6-Eo-Xxk" customClass="SponsorHeader" customModule="Hacktech" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="64" width="600" height="55"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rj6-SB-Zh8" userLabel="Bar">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partners" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fm3-XB-gdg">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
+                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="26"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.23921568627450979" green="0.22745098039215686" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Fm3-XB-gdg" secondAttribute="trailing" id="10F-Vr-htY"/>
+                                        <constraint firstItem="Fm3-XB-gdg" firstAttribute="leading" secondItem="Rj6-SB-Zh8" secondAttribute="leading" id="Ewq-Hh-6A8"/>
+                                        <constraint firstItem="Fm3-XB-gdg" firstAttribute="top" secondItem="Rj6-SB-Zh8" secondAttribute="top" id="LNP-rT-MlZ"/>
+                                        <constraint firstAttribute="bottom" secondItem="Fm3-XB-gdg" secondAttribute="bottom" id="qep-5U-LO6"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="tintColor" red="0.95686274509803915" green="0.51764705882352935" blue="0.18823529411764706" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Rj6-SB-Zh8" secondAttribute="trailing" id="Rpy-UH-a8q"/>
+                                <constraint firstItem="Rj6-SB-Zh8" firstAttribute="leading" secondItem="VU6-Eo-Xxk" secondAttribute="leading" id="alH-MP-G4s"/>
+                                <constraint firstItem="Rj6-SB-Zh8" firstAttribute="centerY" secondItem="VU6-Eo-Xxk" secondAttribute="centerY" constant="-7.5" id="ifH-8U-zKS"/>
+                                <constraint firstItem="Rj6-SB-Zh8" firstAttribute="top" secondItem="VU6-Eo-Xxk" secondAttribute="topMargin" constant="-8" id="yOe-d2-vRR"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="label" destination="Fm3-XB-gdg" id="wA7-m2-wB3"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="GDG-oq-vPX" id="i9m-3x-AQA"/>
+                            <outlet property="delegate" destination="GDG-oq-vPX" id="cbI-o9-3K0"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Partners &amp; Sponsors" id="ZRF-Za-pur"/>
+                    <connections>
+                        <outlet property="collectionView" destination="4Cn-Dx-t1d" id="Grt-7l-3jR"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEO-7f-Iy4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1562" y="2926"/>
+            <point key="canvasLocation" x="1558" y="2926"/>
         </scene>
         <!--Countdown Nav-->
         <scene sceneID="wfT-8N-74X">
@@ -263,7 +410,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="OJa-0A-Ac4" kind="relationship" relationship="rootViewController" id="Bm5-uh-q9n"/>
+                        <segue destination="8pw-HS-fIb" kind="relationship" relationship="rootViewController" id="DKY-XM-ska"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="32h-1d-sHt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -273,7 +420,7 @@
         <!--Sponsors Nav-->
         <scene sceneID="wi1-We-WL7">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RJv-bh-nXn" userLabel="Sponsors Nav" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RJv-bh-nXn" userLabel="Sponsors Nav" customClass="I" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Sponsors" image="organization.png" id="TSm-cf-pv7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uko-n6-zlr">
@@ -286,7 +433,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="972-ov-CRx" kind="relationship" relationship="rootViewController" id="i24-hB-Lio"/>
+                        <segue destination="GDG-oq-vPX" kind="relationship" relationship="rootViewController" id="g0k-Qs-oub"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Caa-Vk-3e2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -304,9 +451,25 @@
                     <view key="view" contentMode="scaleToFill" id="j04-Gg-eqC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" pageLength="1" translatesAutoresizingMaskIntoConstraints="NO" id="cdb-Fq-jIs">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cdb-Fq-jIs" firstAttribute="bottom" secondItem="dW4-VE-S0g" secondAttribute="top" id="E0T-WS-euq"/>
+                            <constraint firstItem="cdb-Fq-jIs" firstAttribute="leading" secondItem="j04-Gg-eqC" secondAttribute="leading" id="XBC-Vc-PNq"/>
+                            <constraint firstAttribute="trailing" secondItem="cdb-Fq-jIs" secondAttribute="trailing" id="pYE-Ck-gaq"/>
+                            <constraint firstItem="cdb-Fq-jIs" firstAttribute="top" secondItem="Q4A-St-eOr" secondAttribute="bottom" id="sGV-Wp-sfd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="SkH-u7-JY4"/>
+                    <connections>
+                        <outlet property="webView" destination="cdb-Fq-jIs" id="zfs-BD-6BF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INP-Xv-ckd" sceneMemberID="firstResponder"/>
             </objects>
