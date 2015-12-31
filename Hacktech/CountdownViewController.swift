@@ -82,11 +82,6 @@ class CountdownViewController: UIViewController {
         timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // Updates the time shown and the ring UI progress
     func updateTime() {
         var timeLeft = Int(ceil(endTime.timeIntervalSinceDate(NSDate())))

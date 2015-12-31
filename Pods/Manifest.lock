@@ -1,0 +1,16 @@
+PODS:
+  - Masonry (0.6.4)
+  - MSCollectionViewCalendarLayout (0.1.5)
+  - UIColor-HexString (1.1.0)
+
+DEPENDENCIES:
+  - Masonry
+  - MSCollectionViewCalendarLayout
+  - UIColor-HexString
+
+SPEC CHECKSUMS:
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MSCollectionViewCalendarLayout: 9c52894930d6b712951f18873618fc32c00cd4fa
+  UIColor-HexString: f8a5612bd6772fed8db58ee594b42a0b2831750e
+
+COCOAPODS: 0.39.0

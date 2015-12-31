@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>start</key>
+			<string>2016/02/26 22:00 PST</string>
+			<key>durationInHours</key>
+			<real>1.5</real>
+			<key>title</key>
+			<string>Introduction</string>
+			<key>location</key>
+			<string>Caltech</string>
+			<key>information</key>
+			<string>Hacktech is Caltech&apos;s premier interdisciplinary hackathon: for 36 hours, 500 awesome student hackers will combine computer science with engineering and science to build the most innovative and interdisciplinary creations of the future.</string>
+		</dict>
+		<dict>
+			<key>start</key>
+			<string>2016/02/26 23:30 PST</string>
+			<key>durationInHours</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Start Hacking</string>
+			<key>location</key>
+			<string>Hacktech</string>
+			<key>information</key>
+			<string>start hacking!@!@!@!@</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>start</key>
+			<string>2016/02/27 00:00 PST</string>
+			<key>durationInHours</key>
+			<real>1.5</real>
+			<key>title</key>
+			<string>Introduction</string>
+			<key>location</key>
+			<string>Caltech</string>
+			<key>information</key>
+			<string>second intro</string>
+		</dict>
+		<dict>
+			<key>start</key>
+			<string>2016/02/27 01:30 PST</string>
+			<key>durationInHours</key>
+			<real>1.5</real>
+			<key>title</key>
+			<string>Start Hacking</string>
+			<key>location</key>
+			<string>Hacktech</string>
+			<key>information</key>
+			<string>Hacktech is Caltech&apos;s premier interdisciplinary hackathon: for 36 hours, 500 awesome student hackers will combine computer science with engineering and science to build the most innovative and interdisciplinary creations of the future.</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>start</key>
+			<string>2016/02/28 00:00 PST</string>
+			<key>durationInHours</key>
+			<real>1.5</real>
+			<key>title</key>
+			<string>Introduction</string>
+			<key>location</key>
+			<string>Caltech</string>
+			<key>information</key>
+			<string>Hacktech is Caltech&apos;s premier interdisciplinary hackathon: for 36 hours, 500 awesome student hackers will combine computer science with engineering and science to build the most innovative and interdisciplinary creations of the future.</string>
+		</dict>
+		<dict>
+			<key>start</key>
+			<string>2016/02/28 01:30 PST</string>
+			<key>durationInHours</key>
+			<real>1.5</real>
+			<key>title</key>
+			<string>Start Hacking</string>
+			<key>location</key>
+			<string>Hacktech</string>
+			<key>information</key>
+			<string>Hacktech is Caltech&apos;s premier interdisciplinary hackathon: for 36 hours, 500 awesome student hackers will combine computer science with engineering and science to build the most innovative and interdisciplinary creations of the future.Hacktech is Caltech&apos;s premier interdisciplinary hackathon: for 36 hours, 500 awesome student hackers will combine computer science with engineering and science to build the most innovative and interdisciplinary creations of the future.Hacktech is Caltech&apos;s premier interdisciplinary hackathon: for 36 hours, 500 awesome student hackers will combine computer science with engineering and science to build the most innovative and interdisciplinary creations of the future.Hacktech is Caltech&apos;s premier interdisciplinary hackathon: for 36 hours, 500 awesome student hackers will combine computer science with engineering and science to build the most innovative and interdisciplinary creations of the future.Hacktech is Caltech&apos;s premier interdisciplinary hackathon: for 36 hours, 500 awesome student hackers will combine computer science with engineering and science to build the most innovative and interdisciplinary creations of the future.Hacktech is Caltech&apos;s premier interdisciplinary hackathon: for 36 hours, 500 awesome student hackers will combine computer science with engineering and science to build the most innovative and interdisciplinary creations of the future.Hacktech is Caltech&apos;s premier interdisciplinary hackathon: for 36 hours, 500 awesome student hackers will combine computer science with engineering and science to build the most innovative and interdisciplinary creations of the future.Hacktech is Caltech&apos;s premier interdisciplinary hackathon: for 36 hours, 500 awesome student hackers will combine computer science with engineering and science to build the most innovative and interdisciplinary creations of the future.Hacktech is Caltech&apos;s premier interdisciplinary hackathon: for 36 hours, 500 awesome student hackers will combine computer science with engineering and science to build the most innovative and interdisciplinary creations of the future.Hacktech is Caltech&apos;s premier interdisciplinary hackathon: for 36 hours, 500 awesome student hackers will combine computer science with engineering and science to build the most innovative and interdisciplinary creations of the future.Hacktech is Caltech&apos;s premier interdisciplinary hackathon: for 36 hours, 500 awesome student hackers will combine computer science with engineering and science to build the most innovative and interdisciplinary creations of the future.</string>
+		</dict>
+	</array>
+</array>
+</plist>

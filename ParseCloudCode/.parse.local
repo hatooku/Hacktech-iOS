@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "Hacktech": {
+      "applicationId": "iuXNbWm1Mrn77rIVDunqhlXEaLtmvqbtRLAEJPr9"
+    },
+    "_default": {
+      "link": "Hacktech"
+    }
+  }
+}
