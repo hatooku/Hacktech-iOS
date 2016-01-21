@@ -19,7 +19,7 @@ class CountdownViewController: UIViewController {
     @IBOutlet var countdownRing:KDCircularProgress!
     
     // End time of hackathon, format is "yyyy/MM/dd HH:mm zz"
-    let endTimeString = "2016/02/27 00:00 PST"
+    let endTimeString = "2016/01/08 00:00 PST"
     
     // Duration of hackathon, in hours
     let duration = 36
@@ -72,8 +72,9 @@ class CountdownViewController: UIViewController {
         countdownRing.glowMode = .Constant
         countdownRing.glowAmount = 0.3
         countdownRing.setColors(orange)
-        countdownRing.trackColor = gray
+        countdownRing.trackColor = orange.colorWithAlphaComponent(0.34)
         countdownRing.angle = 360
+        countdownRing.roundedCorners = true
         
         // Update text and ring UI
         updateTime()

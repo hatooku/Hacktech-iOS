@@ -33,15 +33,6 @@
 		D31AE1AD1C2A450E00875E8F /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31AE1A41C2A450E00875E8F /* Raleway-Regular.ttf */; };
 		D31AE1AE1C2A450E00875E8F /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31AE1A51C2A450E00875E8F /* Raleway-SemiBold.ttf */; };
 		D31AE1AF1C2A450E00875E8F /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31AE1A61C2A450E00875E8F /* Raleway-Thin.ttf */; };
-		D31AE1CD1C2A463900875E8F /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = D31AE1C31C2A463900875E8F /* orange.png */; };
-		D31AE1CE1C2A463900875E8F /* transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = D31AE1C41C2A463900875E8F /* transparent.png */; };
-		D31AE1CF1C2A463900875E8F /* Hacktech.png in Resources */ = {isa = PBXBuildFile; fileRef = D31AE1C61C2A463900875E8F /* Hacktech.png */; };
-		D31AE1D01C2A463900875E8F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D31AE1C71C2A463900875E8F /* logo.png */; };
-		D31AE1D11C2A463900875E8F /* appointment_reminders.png in Resources */ = {isa = PBXBuildFile; fileRef = D31AE1C91C2A463900875E8F /* appointment_reminders.png */; };
-		D31AE1D21C2A463900875E8F /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = D31AE1CA1C2A463900875E8F /* calendar.png */; };
-		D31AE1D31C2A463900875E8F /* organization.png in Resources */ = {isa = PBXBuildFile; fileRef = D31AE1CB1C2A463900875E8F /* organization.png */; };
-		D31AE1D41C2A463900875E8F /* timer.png in Resources */ = {isa = PBXBuildFile; fileRef = D31AE1CC1C2A463900875E8F /* timer.png */; };
-		D31AE1E01C2A492A00875E8F /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = D31AE1DF1C2A492A00875E8F /* location.png */; };
 		D31AE1E21C2A51AC00875E8F /* Font+MonospacedDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31AE1E11C2A51AC00875E8F /* Font+MonospacedDigits.swift */; };
 		D334D4B91C325D0100D080DC /* MSCurrentTimeGridline.m in Sources */ = {isa = PBXBuildFile; fileRef = D334D4A61C325D0100D080DC /* MSCurrentTimeGridline.m */; };
 		D334D4BA1C325D0100D080DC /* MSCurrentTimeIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = D334D4A81C325D0100D080DC /* MSCurrentTimeIndicator.m */; };
@@ -52,15 +43,11 @@
 		D334D4BF1C325D0100D080DC /* MSGridline.m in Sources */ = {isa = PBXBuildFile; fileRef = D334D4B21C325D0100D080DC /* MSGridline.m */; };
 		D334D4C01C325D0100D080DC /* MSTimeRowHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D334D4B41C325D0100D080DC /* MSTimeRowHeader.m */; };
 		D334D4C11C325D0100D080DC /* MSTimeRowHeaderBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = D334D4B61C325D0100D080DC /* MSTimeRowHeaderBackground.m */; };
-		D33F55931C2DF25300B8B4EB /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33F55921C2DF25300B8B4EB /* ImageResizer.swift */; };
 		D3501A801C2A9C2E004F72BB /* SponsorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3501A7F1C2A9C2E004F72BB /* SponsorsViewController.swift */; };
 		D3501A821C2A9EA7004F72BB /* SponsorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3501A811C2A9EA7004F72BB /* SponsorCell.swift */; };
 		D3501A861C2BD473004F72BB /* SponsorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3501A851C2BD473004F72BB /* SponsorHeader.swift */; };
-		D3501A881C2D2070004F72BB /* map.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D3501A871C2D2070004F72BB /* map.pdf */; };
 		D385A0821C293943005D175C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D385A0801C293943005D175C /* Bolts.framework */; };
 		D385A0831C293944005D175C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D385A0811C293943005D175C /* Parse.framework */; };
-		D38689ED1C2E20F00097F639 /* map2.png in Resources */ = {isa = PBXBuildFile; fileRef = D38689EB1C2E20F00097F639 /* map2.png */; };
-		D38689EE1C2E20F00097F639 /* map1.png in Resources */ = {isa = PBXBuildFile; fileRef = D38689EC1C2E20F00097F639 /* map1.png */; };
 		D38689F01C2E588F0097F639 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38689EF1C2E588F0097F639 /* MapViewController.swift */; };
 		D391AEAB1C32849E0072BD86 /* EventSchedule.plist in Resources */ = {isa = PBXBuildFile; fileRef = D391AEAA1C32849E0072BD86 /* EventSchedule.plist */; };
 		D3A1406C1C34D29400A02C33 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A1406B1C34D29400A02C33 /* AnnouncementsViewController.swift */; };
@@ -105,15 +92,6 @@
 		D31AE1A41C2A450E00875E8F /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		D31AE1A51C2A450E00875E8F /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
 		D31AE1A61C2A450E00875E8F /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
-		D31AE1C31C2A463900875E8F /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange.png; sourceTree = "<group>"; };
-		D31AE1C41C2A463900875E8F /* transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent.png; sourceTree = "<group>"; };
-		D31AE1C61C2A463900875E8F /* Hacktech.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hacktech.png; sourceTree = "<group>"; };
-		D31AE1C71C2A463900875E8F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		D31AE1C91C2A463900875E8F /* appointment_reminders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appointment_reminders.png; sourceTree = "<group>"; };
-		D31AE1CA1C2A463900875E8F /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
-		D31AE1CB1C2A463900875E8F /* organization.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = organization.png; sourceTree = "<group>"; };
-		D31AE1CC1C2A463900875E8F /* timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timer.png; sourceTree = "<group>"; };
-		D31AE1DF1C2A492A00875E8F /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
 		D31AE1E11C2A51AC00875E8F /* Font+MonospacedDigits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+MonospacedDigits.swift"; sourceTree = "<group>"; };
 		D334D4A51C325D0100D080DC /* MSCurrentTimeGridline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCurrentTimeGridline.h; sourceTree = "<group>"; };
 		D334D4A61C325D0100D080DC /* MSCurrentTimeGridline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCurrentTimeGridline.m; sourceTree = "<group>"; };
@@ -134,15 +112,11 @@
 		D334D4B51C325D0100D080DC /* MSTimeRowHeaderBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTimeRowHeaderBackground.h; sourceTree = "<group>"; };
 		D334D4B61C325D0100D080DC /* MSTimeRowHeaderBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTimeRowHeaderBackground.m; sourceTree = "<group>"; };
 		D334D4B71C325D0100D080DC /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		D33F55921C2DF25300B8B4EB /* ImageResizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
 		D3501A7F1C2A9C2E004F72BB /* SponsorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorsViewController.swift; sourceTree = "<group>"; };
 		D3501A811C2A9EA7004F72BB /* SponsorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorCell.swift; sourceTree = "<group>"; };
 		D3501A851C2BD473004F72BB /* SponsorHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorHeader.swift; sourceTree = "<group>"; };
-		D3501A871C2D2070004F72BB /* map.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = map.pdf; path = ../map.pdf; sourceTree = "<group>"; };
 		D385A0801C293943005D175C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		D385A0811C293943005D175C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		D38689EB1C2E20F00097F639 /* map2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map2.png; sourceTree = "<group>"; };
-		D38689EC1C2E20F00097F639 /* map1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map1.png; sourceTree = "<group>"; };
 		D38689EF1C2E588F0097F639 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D391AEAA1C32849E0072BD86 /* EventSchedule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EventSchedule.plist; sourceTree = "<group>"; };
 		D3A1406B1C34D29400A02C33 /* AnnouncementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementsViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +167,10 @@
 		D309E2841C1EB0ED00596CB0 = {
 			isa = PBXGroup;
 			children = (
+				D309E28F1C1EB0ED00596CB0 /* Hacktech */,
+				D309E28E1C1EB0ED00596CB0 /* Products */,
+				E5C4186D98E1F823C8F53679 /* Pods */,
+				3B4A606DBFF30DB48F8B0676 /* Frameworks */,
 				D309E2BE1C1EB26B00596CB0 /* libsqlite3.tbd */,
 				D309E2BC1C1EB26600596CB0 /* libz.tbd */,
 				D309E2BA1C1EB26200596CB0 /* SystemConfiguration.framework */,
@@ -203,10 +181,6 @@
 				D309E2B01C1EB24900596CB0 /* CoreGraphics.framework */,
 				D309E2AE1C1EB24200596CB0 /* CFNetwork.framework */,
 				D309E2AC1C1EB23D00596CB0 /* AudioToolbox.framework */,
-				D309E28F1C1EB0ED00596CB0 /* Hacktech */,
-				D309E28E1C1EB0ED00596CB0 /* Products */,
-				E5C4186D98E1F823C8F53679 /* Pods */,
-				3B4A606DBFF30DB48F8B0676 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,30 +195,16 @@
 		D309E28F1C1EB0ED00596CB0 /* Hacktech */ = {
 			isa = PBXGroup;
 			children = (
-				D31AE1C11C2A463900875E8F /* Images */,
-				D31AE19C1C2A450E00875E8F /* Fonts */,
-				D385A0801C293943005D175C /* Bolts.framework */,
-				D385A0811C293943005D175C /* Parse.framework */,
-				D3A1406D1C34EC2600A02C33 /* ParseUI.framework */,
-				D309E2961C1EB0EE00596CB0 /* Main.storyboard */,
-				D309E29B1C1EB0EE00596CB0 /* LaunchScreen.storyboard */,
-				D3A1406B1C34D29400A02C33 /* AnnouncementsViewController.swift */,
-				D3A140711C35076D00A02C33 /* AnnouncementsCell.swift */,
-				D309E2921C1EB0ED00596CB0 /* CountdownViewController.swift */,
-				D38689EF1C2E588F0097F639 /* MapViewController.swift */,
-				D315EE741C311A3600D487EC /* ScheduleViewController.swift */,
-				D3F821D71C33BEE80006C4A8 /* EventViewController.swift */,
-				D3501A7F1C2A9C2E004F72BB /* SponsorsViewController.swift */,
-				D3501A811C2A9EA7004F72BB /* SponsorCell.swift */,
-				D3501A851C2BD473004F72BB /* SponsorHeader.swift */,
-				D3D3FB0A1C290D4E00D3A15B /* TabBarController.swift */,
-				D33F55921C2DF25300B8B4EB /* ImageResizer.swift */,
-				D3BCAB181C30F56F00278ACC /* ScrollViewDoubleTap.swift */,
 				D309E2901C1EB0ED00596CB0 /* AppDelegate.swift */,
-				D31AE1E31C2A51BA00875E8F /* Libraries */,
 				D309E2991C1EB0EE00596CB0 /* Assets.xcassets */,
-				D309E29E1C1EB0EE00596CB0 /* Info.plist */,
 				D391AEAA1C32849E0072BD86 /* EventSchedule.plist */,
+				D31AE19C1C2A450E00875E8F /* Fonts */,
+				D3EE266D1C37A41D0026F527 /* Storyboards */,
+				D3EE266C1C37A3400026F527 /* Cells */,
+				D3EE266B1C37A0F10026F527 /* ViewControllers */,
+				D3EE266E1C37A4CF0026F527 /* Extensions */,
+				D31AE1E31C2A51BA00875E8F /* Frameworks & Libs */,
+				D309E29E1C1EB0EE00596CB0 /* Info.plist */,
 				D315EE701C31125700D487EC /* Hacktech-Bridging-Header.h */,
 			);
 			path = Hacktech;
@@ -274,57 +234,17 @@
 			path = Raleway;
 			sourceTree = "<group>";
 		};
-		D31AE1C11C2A463900875E8F /* Images */ = {
+		D31AE1E31C2A51BA00875E8F /* Frameworks & Libs */ = {
 			isa = PBXGroup;
 			children = (
-				D3501A871C2D2070004F72BB /* map.pdf */,
-				D38689EB1C2E20F00097F639 /* map2.png */,
-				D38689EC1C2E20F00097F639 /* map1.png */,
-				D31AE1C21C2A463900875E8F /* Colors */,
-				D31AE1C51C2A463900875E8F /* Logos */,
-				D31AE1C81C2A463900875E8F /* Tab Icons */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		D31AE1C21C2A463900875E8F /* Colors */ = {
-			isa = PBXGroup;
-			children = (
-				D31AE1C31C2A463900875E8F /* orange.png */,
-				D31AE1C41C2A463900875E8F /* transparent.png */,
-			);
-			path = Colors;
-			sourceTree = "<group>";
-		};
-		D31AE1C51C2A463900875E8F /* Logos */ = {
-			isa = PBXGroup;
-			children = (
-				D31AE1C61C2A463900875E8F /* Hacktech.png */,
-				D31AE1C71C2A463900875E8F /* logo.png */,
-			);
-			path = Logos;
-			sourceTree = "<group>";
-		};
-		D31AE1C81C2A463900875E8F /* Tab Icons */ = {
-			isa = PBXGroup;
-			children = (
-				D31AE1C91C2A463900875E8F /* appointment_reminders.png */,
-				D31AE1CA1C2A463900875E8F /* calendar.png */,
-				D31AE1CB1C2A463900875E8F /* organization.png */,
-				D31AE1CC1C2A463900875E8F /* timer.png */,
-				D31AE1DF1C2A492A00875E8F /* location.png */,
-			);
-			path = "Tab Icons";
-			sourceTree = "<group>";
-		};
-		D31AE1E31C2A51BA00875E8F /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
+				D385A0801C293943005D175C /* Bolts.framework */,
+				D385A0811C293943005D175C /* Parse.framework */,
+				D3A1406D1C34EC2600A02C33 /* ParseUI.framework */,
 				D334D4A21C325D0100D080DC /* MSCalendar */,
 				D3D3FB201C29389B00D3A15B /* KDCircularProgress.swift */,
 				D31AE1E11C2A51AC00875E8F /* Font+MonospacedDigits.swift */,
 			);
-			name = Libraries;
+			name = "Frameworks & Libs";
 			sourceTree = "<group>";
 		};
 		D334D4A21C325D0100D080DC /* MSCalendar */ = {
@@ -351,6 +271,48 @@
 				D334D4B71C325D0100D080DC /* PrefixHeader.pch */,
 			);
 			path = MSCalendar;
+			sourceTree = "<group>";
+		};
+		D3EE266B1C37A0F10026F527 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D3D3FB0A1C290D4E00D3A15B /* TabBarController.swift */,
+				D309E2921C1EB0ED00596CB0 /* CountdownViewController.swift */,
+				D3A1406B1C34D29400A02C33 /* AnnouncementsViewController.swift */,
+				D38689EF1C2E588F0097F639 /* MapViewController.swift */,
+				D315EE741C311A3600D487EC /* ScheduleViewController.swift */,
+				D3F821D71C33BEE80006C4A8 /* EventViewController.swift */,
+				D3501A7F1C2A9C2E004F72BB /* SponsorsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D3EE266C1C37A3400026F527 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D3A140711C35076D00A02C33 /* AnnouncementsCell.swift */,
+				D3501A811C2A9EA7004F72BB /* SponsorCell.swift */,
+				D3501A851C2BD473004F72BB /* SponsorHeader.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		D3EE266D1C37A41D0026F527 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D309E2961C1EB0EE00596CB0 /* Main.storyboard */,
+				D309E29B1C1EB0EE00596CB0 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D3EE266E1C37A4CF0026F527 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D3BCAB181C30F56F00278ACC /* ScrollViewDoubleTap.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		E5C4186D98E1F823C8F53679 /* Pods */ = {
@@ -398,6 +360,14 @@
 					D309E28C1C1EB0ED00596CB0 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = GWJ92PPT6R;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -425,27 +395,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D31AE1AE1C2A450E00875E8F /* Raleway-SemiBold.ttf in Resources */,
-				D31AE1D11C2A463900875E8F /* appointment_reminders.png in Resources */,
-				D38689EE1C2E20F00097F639 /* map1.png in Resources */,
 				D309E29D1C1EB0EE00596CB0 /* LaunchScreen.storyboard in Resources */,
-				D31AE1CE1C2A463900875E8F /* transparent.png in Resources */,
-				D31AE1E01C2A492A00875E8F /* location.png in Resources */,
-				D31AE1CD1C2A463900875E8F /* orange.png in Resources */,
 				D31AE1AF1C2A450E00875E8F /* Raleway-Thin.ttf in Resources */,
-				D3501A881C2D2070004F72BB /* map.pdf in Resources */,
-				D31AE1D31C2A463900875E8F /* organization.png in Resources */,
 				D31AE1A81C2A450E00875E8F /* Raleway-ExtraBold.ttf in Resources */,
 				D309E29A1C1EB0EE00596CB0 /* Assets.xcassets in Resources */,
 				D31AE1AB1C2A450E00875E8F /* Raleway-Light.ttf in Resources */,
-				D31AE1CF1C2A463900875E8F /* Hacktech.png in Resources */,
 				D31AE1AC1C2A450E00875E8F /* Raleway-Medium.ttf in Resources */,
-				D38689ED1C2E20F00097F639 /* map2.png in Resources */,
 				D31AE1AA1C2A450E00875E8F /* Raleway-Heavy.ttf in Resources */,
-				D31AE1D41C2A463900875E8F /* timer.png in Resources */,
 				D391AEAB1C32849E0072BD86 /* EventSchedule.plist in Resources */,
 				D31AE1A71C2A450E00875E8F /* Raleway-Bold.ttf in Resources */,
-				D31AE1D21C2A463900875E8F /* calendar.png in Resources */,
-				D31AE1D01C2A463900875E8F /* logo.png in Resources */,
 				D31AE1AD1C2A450E00875E8F /* Raleway-Regular.ttf in Resources */,
 				D309E2981C1EB0EE00596CB0 /* Main.storyboard in Resources */,
 				D31AE1A91C2A450E00875E8F /* Raleway-ExtraLight.ttf in Resources */,
@@ -514,7 +472,6 @@
 				D334D4C01C325D0100D080DC /* MSTimeRowHeader.m in Sources */,
 				D315EE751C311A3600D487EC /* ScheduleViewController.swift in Sources */,
 				D3BCAB191C30F56F00278ACC /* ScrollViewDoubleTap.swift in Sources */,
-				D33F55931C2DF25300B8B4EB /* ImageResizer.swift in Sources */,
 				D309E2911C1EB0ED00596CB0 /* AppDelegate.swift in Sources */,
 				D3F821D81C33BEE80006C4A8 /* EventViewController.swift in Sources */,
 				D334D4C11C325D0100D080DC /* MSTimeRowHeaderBackground.m in Sources */,
@@ -543,6 +500,7 @@
 				D309E2971C1EB0EE00596CB0 /* Base */,
 			);
 			name = Main.storyboard;
+			path = Hacktech;
 			sourceTree = "<group>";
 		};
 		D309E29B1C1EB0EE00596CB0 /* LaunchScreen.storyboard */ = {
@@ -551,6 +509,7 @@
 				D309E29C1C1EB0EE00596CB0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = Hacktech;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

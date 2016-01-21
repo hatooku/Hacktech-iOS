@@ -10,11 +10,12 @@ import UIKit
 import Parse
 import Bolts
 
+let announcementsTabIndex = 1
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
@@ -49,7 +50,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let settings = UIUserNotificationSettings(forTypes: types, categories: nil)
         application.registerUserNotificationSettings(settings)
         application.registerForRemoteNotifications()
-
         
         return true
     }
@@ -69,7 +69,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        updateTabBarBadge()
     }
 
     func applicationWillTerminate(application: UIApplication) {
@@ -102,10 +102,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        
         PFPush.handlePush(userInfo)
-        if application.applicationState == UIApplicationState.Inactive {
+        if application.applicationState == UIApplicationState.Inactive || application.applicationState == UIApplicationState.Background {
             PFAnalytics.trackAppOpenedWithRemoteNotificationPayload(userInfo)
+            let tabBarController = self.window?.rootViewController as! TabBarController
+            tabBarController.selectedIndex = announcementsTabIndex
+        }
+        else {
+            updateTabBarBadge()
+            
+            // if announcements is current tab view, refresh
+            let tabBarController = self.window?.rootViewController as! TabBarController
+            
+            if (tabBarController.selectedIndex == announcementsTabIndex) {
+                let announcementsNavController = tabBarController.viewControllers![announcementsTabIndex] as! UINavigationController
+                let announcementsViewController = announcementsNavController.viewControllers[0] as! AnnouncementsViewController
+                announcementsViewController.loadObjects()
+            }
+            
+        }
+        
+    }
+    
+    func updateTabBarBadge() {
+        let currentInstallation = PFInstallation.currentInstallation()
+        
+        // Tab Bar Badge
+        let tabBarController = self.window?.rootViewController as! TabBarController
+        let announcementsTab = tabBarController.tabBar.items![announcementsTabIndex]
+        if (currentInstallation.badge != 0) {
+            announcementsTab.badgeValue = String(currentInstallation.badge)
+        }
+        else {
+            announcementsTab.badgeValue = nil
         }
     }
 

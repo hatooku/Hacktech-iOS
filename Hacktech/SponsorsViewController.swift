@@ -14,6 +14,7 @@ let partnerArray = [UIImage(named: "mlh"), UIImage(named: "hackerfund")]
 
 let sponsorArray = [UIImage(named: "microsoft"),
     UIImage(named: "synaptics"),
+    UIImage(named: "kpcb"),
     UIImage(named: "wolfram"),
     UIImage(named: "namecheap"),
     UIImage(named: "google"),
@@ -54,9 +55,9 @@ class SponsorsViewController: UICollectionViewController, UICollectionViewDelega
         
         let sponsorImg = imgArray[indexPath.section][indexPath.row]
         
-        let resizedImg = sponsorImg?.resizedImageWithSize(cell.imageView.frame.size)
+        cell.imageView.image = sponsorImg
         
-        cell.imageView.image = resizedImg
+        cell.imageView.contentMode = .ScaleAspectFit
         
         cell.layer.shouldRasterize = true
         

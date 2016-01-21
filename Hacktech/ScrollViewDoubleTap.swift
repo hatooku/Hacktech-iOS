@@ -10,7 +10,7 @@ import UIKit
 
 extension UIScrollView {
     
-    func enableDoubleTap() {
+    func enableDoubleTapZoom() {
         let doubleTap = UITapGestureRecognizer(target: self, action: "handleDoubleTap:")
         doubleTap.numberOfTapsRequired = 2
         self.addGestureRecognizer(doubleTap)

@@ -18,8 +18,6 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
     // ImageViews inside ScrollViews to allow for zooming of images
     var pageViews: [UIScrollView?] = []
     
-    var currentPageView: UIView!
-    
     let viewForZoomTag = 1
     let pageViewTag = 2
     
@@ -34,7 +32,6 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
         
         pageControl.currentPage = 0
         pageControl.numberOfPages = pageCount
-        pageControl.addTarget(self, action: Selector("changePage:"), forControlEvents: UIControlEvents.ValueChanged)
         
         for _ in 0..<pageCount {
             pageViews.append(nil)
@@ -48,13 +45,6 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
         mainScrollViewContentSize = mainScrollView.contentSize
         
         loadVisiblePages()
-    }
-
-    func changePage(sender: AnyObject) -> () {
-        let x = CGFloat(pageControl.currentPage) * mainScrollView.frame.size.width
-        mainScrollView.setContentOffset(CGPointMake(x, 0), animated: true)
-        loadVisiblePages()
-        currentPageView = pageViews[pageControl.currentPage]
     }
 
     func loadPage(page: Int) {
@@ -85,7 +75,7 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
             newScrollView.zoomScale = 1.0
             newScrollView.delegate = self
             
-            newScrollView.enableDoubleTap()
+            newScrollView.enableDoubleTapZoom()
             
             let newImgView = UIImageView(image: pageImages[page])
             newImgView.contentMode = .ScaleAspectFit
@@ -112,10 +102,7 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func loadVisiblePages() {
-        let pageWidth = mainScrollView.frame.size.width
-        let page = Int(floor((mainScrollView.contentOffset.x * 2.0 + pageWidth) / (pageWidth * 2.0)))
-        
-        pageControl.currentPage = page
+        let page = pageControl.currentPage
         
         let firstPage = page - 1
         let lastPage = page + 1
@@ -140,7 +127,6 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         
         let targetOffset = targetContentOffset.memory.x
-        let zoomRatio = scrollView.contentSize.height / mainScrollViewContentSize.height
         
         if scrollView.tag == 0 {
             // mainScrollView
@@ -148,12 +134,10 @@ class MapViewController: UIViewController, UIScrollViewDelegate {
             let mainScrollViewWidthPerPage = mainScrollViewContentSize.width / CGFloat(pageControl.numberOfPages)
             
             
-            let currentPage = targetOffset / (mainScrollViewWidthPerPage * zoomRatio)
-            
+            let currentPage = targetOffset / (mainScrollViewWidthPerPage)
             if pageControl.currentPage != Int(currentPage)
             {
                 pageControl.currentPage = Int(currentPage)
-                
                 loadVisiblePages()
             }
         }
