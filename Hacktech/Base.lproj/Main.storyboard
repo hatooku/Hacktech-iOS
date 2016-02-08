@@ -336,7 +336,7 @@
         <scene sceneID="wfT-8N-74X">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SU7-Ch-g2p" userLabel="Countdown Nav" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Countdown" image="timer.png" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Countdown" image="timer" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="hIM-Q5-eJW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -359,7 +359,7 @@
         <scene sceneID="eQ1-ba-orB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g0D-bf-52l" userLabel="Announcements Nav" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="1" title="Announcements" image="appointment_reminders.png" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Announcements" image="appointment_reminders" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="3Du-yb-nFi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -382,7 +382,7 @@
         <scene sceneID="64T-53-8MH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TJm-vf-jax" userLabel="Schedule Nav" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Schedule" image="calendar.png" id="1Jn-vi-61o"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="calendar" id="1Jn-vi-61o"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="iwJ-vo-ORg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -433,7 +433,13 @@
                         </connections>
                     </collectionView>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" title="Schedule" id="byr-iq-OEm"/>
+                    <navigationItem key="navigationItem" title="Schedule" id="byr-iq-OEm">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="qXy-Cb-ah2">
+                            <connections>
+                                <action selector="refresh:" destination="l1a-8f-FkD" id="lFZ-LL-IFq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="gWO-Ek-tSg" id="k1t-rT-t4F"/>
                         <segue destination="xIH-MS-QCt" kind="show" identifier="showEvent" id="AT8-Qk-6zI"/>
@@ -545,7 +551,7 @@
         <scene sceneID="wi1-We-WL7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RJv-bh-nXn" userLabel="Sponsors Nav" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sponsors" image="organization.png" id="TSm-cf-pv7"/>
+                    <tabBarItem key="tabBarItem" title="Sponsors" image="organization" id="TSm-cf-pv7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Uko-n6-zlr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -568,7 +574,7 @@
         <scene sceneID="UTG-Aa-4MH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J9b-70-B8u" userLabel="Sponsors Nav" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" image="location.png" id="adX-eI-gEN"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="location" id="adX-eI-gEN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="SZB-H4-bGQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -655,12 +661,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Hacktech.png" width="2048" height="786"/>
-        <image name="appointment_reminders.png" width="25" height="25"/>
-        <image name="calendar.png" width="25" height="25"/>
-        <image name="location.png" width="25" height="25"/>
-        <image name="organization.png" width="25" height="25"/>
-        <image name="timer.png" width="25" height="25"/>
+        <image name="Hacktech.png" width="750" height="600"/>
+        <image name="appointment_reminders" width="25" height="25"/>
+        <image name="calendar" width="25" height="25"/>
+        <image name="location" width="25" height="25"/>
+        <image name="organization" width="25" height="25"/>
+        <image name="timer" width="25" height="25"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

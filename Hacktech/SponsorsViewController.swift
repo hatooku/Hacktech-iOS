@@ -14,17 +14,26 @@ let partnerArray = [UIImage(named: "mlh"), UIImage(named: "hackerfund")]
 
 let sponsorArray = [UIImage(named: "microsoft"),
     UIImage(named: "synaptics"),
+    UIImage(named: "taboola"),
     UIImage(named: "kpcb"),
+    UIImage(named: "caltechfund.jpg"),
+    UIImage(named: "postmates"),
+    UIImage(named: "twilio"),
     UIImage(named: "wolfram"),
+    UIImage(named: "openx"),
+    UIImage(named: "facebook"),
+    UIImage(named: "quantiacs"),
     UIImage(named: "namecheap"),
     UIImage(named: "google"),
     UIImage(named: "hellosign"),
     UIImage(named: "soylent"),
     UIImage(named: "jetbrains"),
-    UIImage(named: "drawattention"),
     UIImage(named: "hackerrank"),
     UIImage(named: "bitalino"),
-    UIImage(named: "plux")]
+    UIImage(named: "plux"),
+    UIImage(named: "sharethebus"),
+    UIImage(named: "ultrapress.jpg"),
+    UIImage(named: "clarifai")]
 
 
 let imgArray = [partnerArray, sponsorArray]
@@ -33,9 +42,9 @@ let headerNames = ["Partners", "Sponsors"]
 
 let headerSize = CGSizeMake(600, 55)
 
-let partnerCellSizeArr = [CGSizeMake(125.0, 125.0), CGSizeMake(140.0, 140.0)]
+let partnerCellSizeArr = [CGSizeMake(140.0, 140.0), CGSizeMake(170.0, 170.0)]
 
-let sponsorCellSize = CGSizeMake(100.0, 100.0)
+let sponsorCellSize = CGSizeMake(120.0, 120.0)
 
 class SponsorsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout
 {

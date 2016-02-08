@@ -7,16 +7,21 @@
 //
 
 import UIKit
+import Parse
 
 let MSEventCellReuseIdentifier = "MSEventCellReuseIdentifier"
 let MSDayColumnHeaderReuseIdentifier = "MSDayColumnHeaderReuseIdentifier"
 let MSTimeRowHeaderReuseIdentifier = "MSTimeRowHeaderReuseIdentifier"
 
+let MIN_PER_HOUR = 60.0
+let SEC_PER_MIN = 60.0
+
 class ScheduleViewController: UICollectionViewController, MSCollectionViewDelegateCalendarLayout {
     
     var collectionViewCalendarLayout: MSCollectionViewCalendarLayout = MSCollectionViewCalendarLayout()
-    
+    let query = PFQuery(className: "Schedule")
     var eventArr = [[MSEvent]]()
+    var loading = false
     
     // variable to preserve content offset when returning from segue
     var firstAppear = true
@@ -73,35 +78,76 @@ class ScheduleViewController: UICollectionViewController, MSCollectionViewDelega
     // load data off plist file
     
     func loadEvents() {
+        self.loading = true
+        var day1 = [MSEvent]()
+        var day2 = [MSEvent]()
+        var day3 = [MSEvent]()
         
-        let plistPath = NSBundle.mainBundle().pathForResource("EventSchedule", ofType: "plist")
-        let contentArray = NSArray(contentsOfFile: plistPath!)!
-        
-
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm zz"
-        
-        for day in 0..<contentArray.count {
-            // new event array for a specific day
-            var dayArr = [MSEvent]()
+        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+            if (error == nil) {
+                self.eventArr.removeAll()
+                for object in objects! {
             
-            // info from plist to fill dayArr
-            let dayArrPlist = contentArray[day] as! NSArray
+                    if object["startTime"] != nil && object["endTime"] != nil && object["title"] != nil {
+                        let event = MSEvent.create()
+                        let start =  (object["startTime"] as! NSDate!)
+                        let end = (object["endTime"] as! NSDate!)
+                        event.start = start.dateByAddingTimeInterval(8.0 * MIN_PER_HOUR * SEC_PER_MIN)
+                        event.end = end.dateByAddingTimeInterval(8.0 * MIN_PER_HOUR * SEC_PER_MIN)
             
-            for eventIndex in 0..<contentArray[day].count {
-                
-                    // new event
-                    let event = MSEvent.create()
-                    // info from plist to fill event
-                    let eventDict = dayArrPlist[eventIndex] as! NSDictionary
-                    event.start = dateFormatter.dateFromString(eventDict["start"] as! String)!
-                    event.durationInHours = eventDict["durationInHours"] as! Double
-                    event.title = eventDict["title"] as! String
-                    event.location = eventDict["location"] as! String
-                    event.information = eventDict["information"] as! String
-                    dayArr.append(event)
+                        event.title = object["title"] as! String!
+            
+                        if (object["location"] != nil) {
+                            event.location = object["location"] as! String!
+                        }
+                        else {
+                            event.location = ""
+                        }
+            
+                        if (object["description"] != nil) {
+                            event.information = object["description"] as! String!
+                        }
+                        else {
+                            event.information = ""
+                        }
+            
+                        if let day = object["day"] as! Int? {
+                            if (day == 1) {
+                                day1.append(event)
+                            }
+                            else if (day == 2) {
+                                day2.append(event)
+                            }
+                            else {
+                                day3.append(event)
+                            }
+                        }
+                    }
+                }
+                if (!day1.isEmpty) {
+                    self.eventArr.append(day1)
+                }
+                if (!day2.isEmpty) {
+                    self.eventArr.append(day2)
+                }
+                if (!day3.isEmpty) {
+                    self.eventArr.append(day3)
+                }
+                self.collectionView?.collectionViewLayout.invalidateLayout()
+                self.collectionViewCalendarLayout.invalidateLayoutCache()
+                self.collectionViewCalendarLayout.sectionWidth = self.layoutSectionWidth
+                self.collectionView!.reloadData()
+                self.loading = false
             }
-            self.eventArr.append(dayArr)
+            else {
+                print("Error: \(error!) \(error!.userInfo)")
+            }
+        }
+    }
+    
+    @IBAction func refresh(sender: UIBarButtonItem) {
+        if (!self.loading) {
+            self.loadEvents()
         }
     }
     
@@ -135,7 +181,7 @@ class ScheduleViewController: UICollectionViewController, MSCollectionViewDelega
     // UICollectionViewDataSource
     
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return self.eventArr.count;
+        return self.eventArr.count
     }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -191,7 +237,7 @@ class ScheduleViewController: UICollectionViewController, MSCollectionViewDelega
     func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: MSCollectionViewCalendarLayout!, endTimeForItemAtIndexPath indexPath: NSIndexPath!) -> NSDate! {
         let event = self.eventArr[indexPath.section][indexPath.row]
         
-        return event.start.dateByAddingTimeInterval(60 * 60 * event.durationInHours - 0.005)
+        return event.end.dateByAddingTimeInterval(-10)
     }
     
     func currentTimeComponentsForCollectionView(collectionView: UICollectionView!, layout collectionViewLayout: MSCollectionViewCalendarLayout!) -> NSDate! {
@@ -219,7 +265,7 @@ class ScheduleViewController: UICollectionViewController, MSCollectionViewDelega
             eventViewController.locationString = selectedEvent.location
             eventViewController.descriptionString = selectedEvent.description
             eventViewController.startTime = selectedEvent.start
-            eventViewController.durationInHours = selectedEvent.durationInHours
+            eventViewController.endTime = selectedEvent.end
             eventViewController.descriptionString = selectedEvent.information
         }
     }

@@ -20,7 +20,7 @@ class EventViewController: UIViewController {
     var locationString: String!
     var descriptionString: String!
     var startTime: NSDate!
-    var durationInHours: Double!
+    var endTime: NSDate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +32,6 @@ class EventViewController: UIViewController {
         let dateIntervalFormatter = NSDateIntervalFormatter()
         
         dateIntervalFormatter.dateTemplate = "EEEEddMMMM h:mm a"
-        
-        let endTime = startTime.dateByAddingTimeInterval(60 * 60 * durationInHours!)
         
         timeLabel.text = dateIntervalFormatter.stringFromDate(startTime, toDate: endTime)
         

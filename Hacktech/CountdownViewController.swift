@@ -19,7 +19,7 @@ class CountdownViewController: UIViewController {
     @IBOutlet var countdownRing:KDCircularProgress!
     
     // End time of hackathon, format is "yyyy/MM/dd HH:mm zz"
-    let endTimeString = "2016/01/08 00:00 PST"
+    let endTimeString = "2016/02/28 11:30 PST"
     
     // Duration of hackathon, in hours
     let duration = 36

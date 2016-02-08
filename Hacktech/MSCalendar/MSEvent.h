@@ -12,7 +12,7 @@
 
 
 @property NSDate *start;
-@property double durationInHours;
+@property NSDate *end;
 @property NSString *title;
 @property NSString *location;
 @property NSString *information;

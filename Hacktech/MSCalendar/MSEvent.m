@@ -14,7 +14,7 @@
     self = [super init];
     if (self) {
         _start = [NSDate date];
-        _durationInHours = 0.0;
+        _end = [NSDate date];
         _title = @"";
         _location = @"";
         _information = @"";
