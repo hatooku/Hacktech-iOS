@@ -8,11 +8,29 @@ Parse.Cloud.afterSave("Announcements", function(request) {
 
   // push === 1 means this row should be pushed
   if (pushed === 1) {
-    var pushQuery = new Parse.Query(Parse.Installation);
-    pushQuery.equalTo('deviceType', 'ios');
+    var pushQuery_ios = new Parse.Query(Parse.Installation);
+    var pushQuery_android = new Parse.Query(Parse.Installation);
+
+    pushQuery_ios.equalTo('deviceType', 'ios');
+    pushQuery_android.equalTo('deviceType', 'android');
 
     Parse.Push.send({
-      where: pushQuery, // Set our Installation query
+      where: pushQuery_ios, // Set our Installation query
+      data: {
+        alert: titleText,
+        badge: 'Increment',
+        sound: 'default'
+      }
+    }, {
+      success: function() {
+        // Push was successful
+      },
+      error: function(error) {
+        throw "Got an error " + error.code + " : " + error.message;
+      }
+    });
+    Parse.Push.send({
+      where: pushQuery_android, // Set our Installation query
       data: {
         alert: titleText,
         badge: 'Increment'
