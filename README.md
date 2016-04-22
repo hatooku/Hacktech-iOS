@@ -2,7 +2,7 @@ Hacktech
 ========
 
 ![Screenshot](/home.jpeg "Home Screen")
-![Screenshot](/schedule.jpeg “Schedule Screen“)
+![Screenshot](/schedule.jpeg "Schedule Screen")
 
 Description
 —————
